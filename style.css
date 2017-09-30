@@ -15,6 +15,11 @@ html, body{
   padding: 0 !important;
   height: 100%;
   width: 100%;
+  background: url(code.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
@@ -84,7 +89,7 @@ header > ul > li > a:hover {
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #696969;
   padding: 10px 20px;
   padding: 20px;
@@ -103,6 +108,113 @@ header > ul > li > a:hover {
   /*color: #F9F3F4;*/
   /*text-shadow: opx 0px 300px #000;*/
   font-size: 100%;
+  border-radius: 20px;
 }
 
+
+.topList {
+  max-width: 375px;
+  margin: 5px 5px;
+  text-align: left;
+  border-radius: 10px;
+  color: #696969;
+  padding: 10px 20px;
+  padding: 20px;
+  background: rgba(34,34,34,0.75);
+  opacity: 1;
+}
+
+.topList h2 {
+  /*font-family: 'Raleway', sans-serif;*/
+  color: white;
+  text-shadow: opx 0px 300px #000;
+  font-size: 100%;+
+  text-align: left;
+}
+
+.subList{
+  max-width: 375px;
+  margin: 5px 5px;
+  text-align: left;
+  border-radius: 10px;
+  color: #696969;
+  padding: 10px 20px;
+  padding: 20px;
+  background: rgba(34,34,34,0.75);
+  opacity: 1;
+}
+
+.subList h2 {
+  /*font-family: 'Raleway', sans-serif;*/
+  color: white;
+  text-shadow: opx 0px 300px #000;
+  font-size: 100%;+
+  text-align: left;
+}
+
+.headerList { 
+  color: #000;
+  background: rgba(34,34,34,0.75);
+  border-radius: 20px;
+}
+
+.outsideBubbleLeft {
+  max-width: 375px;
+  margin: 1px 1px;
+  text-align: left;
+  border-radius: 20px;
+  color: #696969;
+  padding: 5px 10px;
+  padding: 2px;
+  background: rgba(75, 107, 110,0.5);
+  vertical-align: center;
+  float: left;
+}
+
+.outsideBubbleRight {
+  max-width: 375px;
+  min-width: 375px;
+  margin: 1px 1px;
+  text-align: left;
+  border-radius: 20px;
+  color: #696969;
+  padding: 5px 10px;
+  padding: 2px;
+  background: rgba(75, 107, 110,0.5);
+  vertical-align: center;
+  float: right;
+}
+.outsideBubbleCenter {
+  max-width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  border-radius: 20px;
+  color: #696969;
+  padding: 5px 10px;
+  padding: 2px;
+  background: rgba(75, 107, 110,0.5);
+  vertical-align: center;
+  float: center;
+}
+
+.outsideBubbleRight a {
+  color: #AE97CB;
+  text-decoration: none;
+}
+
+.outsideBubbleLeft a {
+  color: #AE97CB;
+  text-decoration: none;
+}
+
+ul {
+  /*font-family: 'Raleway', sans-serif;*/
+  font-size: 100%;
+  text-align: left;
+  list-style: none;
+}
+
+li {
+  margin: 0 0 5px 0;
+}
 
