@@ -5,6 +5,11 @@
   color: #fff;
 }
 
+div {
+  margin: 0;
+  padding: 0;
+}
+
 html, body{
   margin: 0 !important;
   padding: 0 !important;
@@ -44,6 +49,18 @@ header > ul > li > a {
 }
 
 header > ul > li > a:hover {
+}
+
+.scaled {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.current {
+  color: #3c3;
+  font-weight: 800;
 }
 
 .intro{
