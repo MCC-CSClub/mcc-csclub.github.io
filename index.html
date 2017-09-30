@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -14,14 +15,14 @@
 <body>
   <header>
     <ul>
-      <li><a href="">List one</a></li>
-      <li><a href="">List two</a></li>
-      <li><a href="">List three</a></li>
-      <li><a href="">List four</a></li>
-      <li><a href="">List five</a></li>
+      <li><a href="#backgroundInit" class="current">List one</a></li>
+      <li><a href="#pageTwo">List two</a></li>
+      <li><a href="#pageThree">List three</a></li>
+      <li><a href="#pageFour">List four</a></li>
+      <li><a href="#pageFive">List five</a></li>
     </ul>
   </header>
-  <section class="intro">
+  <section class="intro" id="backgroundInit">
     <div class="inner">
       <div class="content">
 
@@ -31,8 +32,27 @@
       </div><!-- content -->
 
     </div>
-
   </section>
+
+  <div id="pageTwo" class="scaled">
+    <h2>Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An quod ita callida est, ut optime possit architectari voluptates? Iam doloris medicamenta illa Epicurea tamquam de narthecio proment: Si gravis, brevis; Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret. Cupit enim dícere nihil posse ad beatam vitam deesse sapienti. Sin aliud quid voles, postea. Duo Reges: constructio interrete. Satisne vobis videor pro meo iure in vestris auribus commentatus?</p>
+  </div>
+
+  <div id="pageThree" class="scaled">
+    <h2>Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An quod ita callida est, ut optime possit architectari voluptates? Iam doloris medicamenta illa Epicurea tamquam de narthecio proment: Si gravis, brevis; Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret. Cupit enim dícere nihil posse ad beatam vitam deesse sapienti. Sin aliud quid voles, postea. Duo Reges: constructio interrete. Satisne vobis videor pro meo iure in vestris auribus commentatus?</p>
+  </div>
+
+  <div id="pageFour" class="scaled">
+    <h2>Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An quod ita callida est, ut optime possit architectari voluptates? Iam doloris medicamenta illa Epicurea tamquam de narthecio proment: Si gravis, brevis; Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret. Cupit enim dícere nihil posse ad beatam vitam deesse sapienti. Sin aliud quid voles, postea. Duo Reges: constructio interrete. Satisne vobis videor pro meo iure in vestris auribus commentatus?</p>
+  </div>
+  
+  <div id="pageFive" class="scaled">
+    <h2>Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An quod ita callida est, ut optime possit architectari voluptates? Iam doloris medicamenta illa Epicurea tamquam de narthecio proment: Si gravis, brevis; Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret. Cupit enim dícere nihil posse ad beatam vitam deesse sapienti. Sin aliud quid voles, postea. Duo Reges: constructio interrete. Satisne vobis videor pro meo iure in vestris auribus commentatus?</p>
+  </div>
 
 </body>
 </html>
