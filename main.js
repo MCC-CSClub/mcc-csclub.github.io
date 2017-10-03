@@ -1,13 +1,14 @@
-var globalApplication = {
-	init: function() { //initialized for event delegation
+const globalApplication = {
+	/* initialized for event delegation */
+	init() {
 		globalApplication.events.document();
 		globalApplication.events.header();
 	},
 	events: {
-		document: function() {
-			setClosestHeaderSection(); //first call on startup;
-			
-			$(document).on("scroll", function() {
+		document() {
+			/* first call on startup */
+			setClosestHeaderSection();
+			$(document).on('scroll', () => {
 				setClosestHeaderSection();
 			});
 
@@ -15,62 +16,71 @@ var globalApplication = {
 			checks href of each anchor in header, finds id with that href, and returns the closest id.
 			*/
 			function setClosestHeaderSection() {
-				var min, //undefined
-				returnId;
-				$("header > ul > li > a").each(function(index, value) {
-					var currentId = $(this).attr("href"), //id of the element we should check
-					sectionVerticalPosition = $(currentId).offset().top, //section distance from top
-					scrollVerticalPosition = $("html, body").scrollTop(); //current distance from top
-					distance = Math.abs(sectionVerticalPosition - scrollVerticalPosition); //current distance from the scroll position and the section
-					
-					if(min === undefined || distance < min) {
+				let min;
+				let returnId;
+				/* we need scope here */
+				$('header > ul > li > a').each(function () {
+					/* id of the element we should check */
+					const currentId = $(this).attr('href');
+					/* section distance from top */
+					const sectionVerticalPosition = $(currentId).offset().top;
+					/* current distance from top */
+					const scrollVerticalPosition = $('html, body').scrollTop();
+					/* current distance from the scroll position and the section */
+					const distance = Math.abs(sectionVerticalPosition - scrollVerticalPosition);
+
+					if (min === undefined || distance < min) {
 						min = distance;
 						returnId = currentId;
 					}
 				});
-				$("header > ul > li > a").removeClass("current"); //we should save the current reference to the class to avoid iterating over this selector
-				$("header > ul > li ").find("[href='" + returnId + "']").attr("class", "current");
+				/* save the current reference to the class to avoid iterating over this selector */
+				$('header > ul > li > a').removeClass('current');
+				$('header > ul > li ').find(`[href='${returnId}']`).attr('class', 'current');
 			}
 		},
-		header: function() {
-			$("header > ul > li").hover(
-				function() {
-					$(this).stop().animate(
-					{
-						opacity: 1
+		header() {
+			$('header > ul > li').hover(
+				function () {
+					$(this).stop().animate({
+						opacity: 1,
 					}, {
 						duration: 250,
-						easing: "linear"
+						easing: 'linear',
 					});
 				},
 				function() {
-					$(this).stop().animate(
-					{
-						opacity: .5
+					$(this).stop().animate({
+						opacity: 0.5,
 					}, {
 						duration: 250,
-						easing: "linear"
+						easing: 'linear',
 					});
-				});
+				},
+			);
 
-			$("header > ul > li > a").on("click",
-				function() {
-					$("header > ul > li > a").removeClass("current"); //selector only affects header
+			$('header > ul > li > a').on(
+				'click',
+				function () {
+					/* selector only affects header */
+					$('header > ul > li > a').removeClass('current');
+					const id = $(this).attr('href');
+					$(this).attr('class', 'current');
 
-					$(this).attr("class", "current");
-					var id= $(this).attr("href");
-
-					$("html, body").stop().animate(
-					{
-						scrollTop: $(id).offset().top //offset from the top position of the element with specific id
-					},
-					{
-						duration: 1000,
-						easing: "swing"
-					});
-				});
-		}
-	}
+					$('html, body').stop().animate(
+						{
+						/* offset from the top position of the element with specific id */
+							scrollTop: $(id).offset().top,
+						},
+						{
+							duration: 1000,
+							easing: 'swing',
+						},
+					);
+				},
+			);
+		},
+	},
 };
 
 $(document).ready(globalApplication.init);
@@ -79,12 +89,15 @@ $(document).ready(globalApplication.init);
 Currently unused and needs patching. Removes specific attribute from immediate children.
 */
 function removeChildrenAttribute(parent, attribute, value) {
-	if($(parent).attr(attribute) === value)
+	if ($(parent).attr(attribute) === value) {
 		$(parent).removeAttr(attribute);
+	}
 
-	$(parent).children().each(function(index) { //we cannot use a selector parameter, since we don't know the attribute
-		if($(this).attr(attribute) === value)
+	/* we cannot use a selector parameter, since we don't know the attribute */
+	$(parent).children().each(function () {
+		if ($(this).attr(attribute) === value) {
 			$(this).removeAttr(attribute);
+		}
 	});
 }
 
