@@ -60,8 +60,8 @@ body, html {
       .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/onion.js.download"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/controls.js.download"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/stats.js.download"></script></head><body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-black w3-opacity-min">
-  <div class="w3-bar" id="myNavbar">
+<div class="w3-top w3-black">
+  <div class="w3-bar w3-opacity-min" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -327,7 +327,7 @@ function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", " w3-opacity-min");
     }
 }
 
