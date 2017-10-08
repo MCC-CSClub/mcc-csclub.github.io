@@ -49,7 +49,7 @@ const globalApplication = {
 						easing: 'linear',
 					});
 				},
-				function() {
+				function () {
 					$(this).stop().animate({
 						opacity: 0.5,
 					}, {
@@ -100,4 +100,3 @@ function removeChildrenAttribute(parent, attribute, value) {
 		}
 	});
 }
-
