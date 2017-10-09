@@ -1,45 +1,69 @@
 <!DOCTYPE html>
+
 <!-- saved from url=(0063)https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
-</style><link type="text/css" rel="stylesheet" href="./W3.CSS Template_files/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
-</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-</style><title>MCC CS Club Site</title>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+
+</style>
+<link type="text/css" rel="stylesheet" href="./W3.CSS Template_files/css">
+<style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+
+</style>
+<style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}
+</style>
+<style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
+
+<script type="text/javascript" src="init.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW_bq0dqdR5pGuA5irKBJG9dAPjxnIzz4">
+</script>
+
+<title>MCC CS Club Site
+</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="./W3.CSS Template_files/w3.css">
+
 <link rel="stylesheet" href="./W3.CSS Template_files/css(1)">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
 }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* TODO: ben.v. Insert our own images here from open-source */
 /*First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('images/glasseswithcode.jpeg');
-    min-height: 100%;
+  background-image: url('images/glasseswithcode.jpeg');
+  min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
-    min-height: 400px;
+  /*background-image: url("/w3images/parallax2.jpg");*/
+  min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
-    min-height: 400px;
+  /*background-image: url("/w3images/parallax3.jpg");*/
+  min-height: 400px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -47,268 +71,839 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
+
 </style>
-<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/map.js.download"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/marker.js.download"></script><style type="text/css">.gm-style {
-        font: 400 11px Roboto, Arial, sans-serif;
-        text-decoration: none;
-      }
-      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/onion.js.download"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/controls.js.download"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/stats.js.download"></script></head><body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-black">
-  <div class="w3-bar w3-opacity-min" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <!-- TODO: benv. ; NEED TO FIX THIS AND ADD OUR OWN IMAGES HERE FOR THE ICONS OF THE MENU BAR -->
-    <a href="https://mcc-compsci.github.io/#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="https://mcc-compsci.github.io/#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> MEMBERSHIP</a>
-    <a href="https://mcc-compsci.github.io/#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GITHUB/PROJECTS</a>
-    <a href="https://mcc-compsci.github.io/#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
-    <a href="http://www.miracosta.edu/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-university"></i> MCC OFFICIAL SITE
-    </a>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/common.js.download">
+</script>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/map.js.download">
+</script>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/util.js.download">
+</script>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/marker.js.download">
+</script>
+<style type="text/css">.gm-style {
+  font: 400 11px Roboto, Arial, sans-serif;
+  text-decoration: none;
+}
+.gm-style img { max-width: none; }
+</style>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/onion.js.download">
+</script>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/controls.js.download">
+</script>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/stats.js.download">
+</script>
+</head>
+<body>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <div class="w3-top w3-black">
+
+    <div class="w3-bar w3-opacity-min" id="myNavbar">
+
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+
+        <i class="fa fa-bars">
+        </i>
+
+      </a>
+
+      <!-- TODO: benv. ; NEED TO FIX THIS AND ADD OUR OWN IMAGES HERE FOR THE ICONS OF THE MENU BAR -->
+
+      <a href="https://mcc-compsci.github.io/#home" class="w3-bar-item w3-button">HOME
+      </a>
+
+      <a href="https://mcc-compsci.github.io/#about" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-user">
+        </i> MEMBERSHIP
+      </a>
+
+      <a href="https://mcc-compsci.github.io/#portfolio" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-th">
+        </i> GITHUB/PROJECTS
+      </a>
+
+      <a href="https://mcc-compsci.github.io/#contact" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-envelope">
+        </i> CONTACT US
+      </a>
+
+      <a href="http://www.miracosta.edu/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+
+        <i class="fa fa-university">
+        </i> MCC OFFICIAL SITE
+
+      </a>
+
+    </div>
+
+
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+
+      <a href="intex.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT
+      </a>
+
+      <a href="https://mcc-compsci.github.io/#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO
+      </a>
+
+      <a href="https://mcc-compsci.github.io/#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT
+      </a>
+
+      <a href="http://www.miracosta.edu/#" class="w3-bar-item w3-button">MCC SITE
+      </a>
+
+    </div>
+
   </div>
 
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="intex.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="https://mcc-compsci.github.io/#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="https://mcc-compsci.github.io/#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="http://www.miracosta.edu/#" class="w3-bar-item w3-button">MCC SITE</a>
-  </div>
-</div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class ="w3-hide-small">MIRACOSTA </span><span class="w3-hide-large">MCC </span>CS CLUB</span>
-  </div>
-</div>
+  <!-- First Parallax Image with Logo Text -->
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">MEMBERSHIP</h3>
-  <p class="w3-center"><em>Passionate developers who love tech and want to pursue a career in software development.</em></p>
-  <p>Starting in Fall 2017, the CS Club was restarted and reinvigorated by a new generation of young computer scientists. We hope to plan
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+
+    <div class="w3-display-middle" style="white-space:nowrap;">
+
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+        <span class ="w3-hide-small">MIRACOSTA 
+        </span>
+        <span class="w3-hide-large">MCC 
+        </span>CS CLUB
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- Container (About Section) -->
+
+  <div class="w3-content w3-container w3-padding-64" id="about">
+
+    <h3 class="w3-center">MEMBERSHIP
+    </h3>
+
+    <p class="w3-center">
+      <em>Passionate developers who love tech and want to pursue a career in software development.
+      </em>
+    </p>
+
+    <p>Starting in Fall 2017, the CS Club was restarted and reinvigorated by a new generation of young computer scientists. We hope to plan
      some awesome events, including hackathons, tech projects with Raspberry Pi's, this website, and a trip to Google! Please
      contact us if you'd like to join in on the awesome activities and get to know us more. The membership table below links
-     to the github accounts of our talented young developers.</p>
-  <div class="w3-row">
+     to the github accounts of our talented young developers.
+   </p>
+
+   <div class="w3-row">
+
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>MiraCosta Club Members</b></p><br>
+
+      <p>
+        <b>
+          <i class="fa fa-user w3-margin-right">
+          </i>MiraCosta Club Members
+        </b>
+      </p>
+      <br>
+      
       <!-- TODO: benv; INSERT AN IMAGE OF THE CLUB DOING AWESOME STUFF-->
+      
       <img src="images/empty-classroom-placeholder.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of the club members" width="500" height="333">
+
     </div>
 
+    
     <!-- TODO: benv; make this available on small devices and format better -->
+    
     <!-- Hide this text on small devices -->
+    
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p><h3><b>Club Leadership</b></h3>
-        <!-- TODO: benv: like to add better style to the list bullets! -->
-        <ul>
-         <li><a href = "https://github.com/nerychapeton">Nery Chapeton-Lamas: Club Advisor</a></li>
-         <li><a href = "">Jenny Lee: Club President</a></li>
-         <li><a href="https://github.com/ChristopherWMM">Christopher Martin: Vice President</a></li>
-         <li><a href = "">Julian Beaulieu: ICC Representative</li>
-         <li><a href = "https://github.com/ben-var">Benjamin Vargas: Club Officer and Administrator</a></li>
-       </ul>
-      <h3><b>Club Members</b></h3>
-      <ul>
-        <li><a href = "https://github.com/NoahT">Noah Teshima: Javascript Jedi<a></li>
-        <li><a href="https://github.com/t-a-y-l-o-r">Taylor Cochran: AKA Web Dev in Training</a></li>
 
-      </ul>
-    </div>
-  </div>
+      <p>
+        <h3>
+          <b>Club Leadership
+          </b>
+        </h3>
+        
+        <!-- TODO: benv: like to add better style to the list bullets! -->
+        
+        <ul>
+
+         <li>
+          <a href = "https://github.com/nerychapeton">Nery Chapeton-Lamas: Club Advisor
+          </a>
+        </li>
+
+        <li>
+          <a href = "">Jenny Lee: Club President
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/ChristopherWMM">Christopher Martin: Vice President
+          </a>
+        </li>
+
+        <li>
+          <a href = "">Julian Beaulieu: ICC Representative
+          </li>
+
+          <li>
+            <a href = "https://github.com/ben-var">Benjamin Vargas: Club Officer and Administrator
+            </a>
+          </li>
+
+        </ul>
+
+        <h3>
+          <b>Club Members
+          </b>
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href = "https://github.com/NoahT">Noah Teshima: Javascript Jedi
+              <a>
+              </li>
+
+              <li>
+                <a href="https://github.com/t-a-y-l-o-r">Taylor Cochran: AKA Web Dev in Training
+                </a>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+
 
   <!-- TODO benv; determine if we want these weird bars
 
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  
+  <p class="w3-large w3-center w3-padding-16">Im really good at:
+  </p>
+  
+  <p class="w3-wide">
+  <i class="fa fa-camera">
+  </i>Photography
+  </p>
+  
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%
+    </div>
+  
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  
+  <p class="w3-wide">
+  <i class="fa fa-laptop">
+  </i>Web Design
+  </p>
+  
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%
+    </div>
+  
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  
+  <p class="w3-wide">
+  <i class="fa fa-photo">
+  </i>Photoshop
+  </p>
+  
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%
+    </div>
+  
   </div>
+
 </div>
 
 -->
 
+
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">50+</span><br>
+
+    <span class="w3-xlarge">50+
+    </span>
+    <br>
     Club Members
+
   </div>
+  
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">Meeting Time</span><br>
+
+    <span class="w3-xlarge">Meeting Time
+    </span>
+    <br>
     3-5 PM, Fridays, OC4622
+
   </div>
+  
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">Discord Channel</span><br>
+
+    <span class="w3-xlarge">Discord Channel
+    </span>
+    <br>
     Contact us for a link
+
   </div>
+  
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">Tutoring Hours</span><br>
+
+    <span class="w3-xlarge">Tutoring Hours
+    </span>
+    <br>
     To be determined...
+
   </div>
+
 </div>
+
 
 <!-- Second Parallax Image with Portfolio Text -->
+
 <div class="bgimg-2 w3-display-container w3-opacity-min">
+
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+
+    <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS
+    </span>
+
   </div>
+
 </div>
+
 
 <!-- Container (Portfolio Section) -->
+
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">OUR PROJECTS</h3>
-    <p class="w3-center"><em>Here is a preview of our member's work to-date<br> Click on the images to make them bigger</em></p><br>
 
+  <h3 class="w3-center">OUR PROJECTS
+  </h3>
+
+  <p class="w3-center">
+    <em>Here is a preview of our member's work to-date
+      <br> Click on the images to make them bigger
+    </em>
+  </p>
+  <br>
+
+  
   <!--TODO benv; figure out what we want to do here. can use images or change this to be a table. I like images better, with a link
-  in the preview. Can link inside the alt text -->
+    in the preview. Can link inside the alt text -->
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
 
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
+    <div class="w3-row-padding w3-center">
 
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
+      <div class="w3-col m3">
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
+        <img src="./W3.CSS Template_files/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
 
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./W3.CSS Template_files/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display=&#39;none&#39;">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT US</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">CONTACT US</h3>
-  <p class="w3-center"><em>If you have any questions, would like to join, or would like to plan an event, please reach out and
-                            we would be more than happy to chat!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-
-      <!-- TODO benv; NOAH, can you get this to work? would be awesome. -->
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width: 100%; height: 400px; position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div style="z-index: 1; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: -106px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 150px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -106px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -106px; top: 361px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 150px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 150px; top: 361px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -106px; top: 105px;"><canvas draggable="false" height="320" width="320" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 150px; top: 105px;"><canvas draggable="false" height="320" width="320" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -106px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -106px; top: 361px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 150px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 150px; top: 361px;"></div></div></div></div><div style="position: absolute; z-index: 0; left: 0px; top: 0px;"><div style="overflow: hidden; width: 284px; height: 400px;"><img src="./W3.CSS Template_files/StaticMapService.GetMapImage" style="width: 284px; height: 400px;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: -106px; top: 105px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="./W3.CSS Template_files/vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 150px; top: 105px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="./W3.CSS Template_files/vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -106px; top: -151px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="./W3.CSS Template_files/vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -106px; top: 361px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="./W3.CSS Template_files/vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 150px; top: -151px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="./W3.CSS Template_files/vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 150px; top: 361px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="./W3.CSS Template_files/vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div></div><div style="z-index: 4; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=41.878114,-87.620872&amp;z=12&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="./W3.CSS Template_files/google4_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 18px; top: 110px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2017 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000;"><img src="./W3.CSS Template_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><img src="./W3.CSS Template_files/transparent.png" draggable="false" style="width: 37px; height: 37px; user-select: none; border: 0px; padding: 0px; margin: 0px; position: absolute; right: 0px; top: 0px; z-index: 10001; cursor: pointer;"></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 71px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2017 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2017 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="cursor: pointer; width: 25px; height: 25px; overflow: hidden; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="./W3.CSS Template_files/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; user-select: none; position: absolute; bottom: 107px; right: 28px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;"><div title="Zoom in" aria-label="Zoom in" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="./W3.CSS Template_files/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><div title="Zoom out" aria-label="Zoom out" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="./W3.CSS Template_files/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div><div class="gm-svpc" controlwidth="28" controlheight="28" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default; position: absolute; left: 0px; top: 0px;"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="./W3.CSS Template_files/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Pegman is on top of the Map" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./W3.CSS Template_files/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./W3.CSS Template_files/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;"><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; cursor: pointer; background-color: rgb(255, 255, 255); display: none;"><img src="./W3.CSS Template_files/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="./W3.CSS Template_files/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 11px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 22px; font-weight: 500;">Map</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; left: 0px; top: 35px; text-align: left; display: none;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="./W3.CSS Template_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 11px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-left: 0px; min-width: 40px;">Satellite</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; right: 0px; top: 35px; text-align: left; display: none;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="./W3.CSS Template_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><span class="w3-hide-small">1 Barnard Dr, Oceanside, CA 92056</span><span class="w3-hide-large">Oceanside, CA></span><br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Phone:</b> TBD<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Email:</b> mcccompsciclub@gmail.com<br>
       </div>
 
-      <!-- TODO benv; NOAH - I need your help to get the contact button and fields to work properly -->
-      <p>Swing by if you want to meet us, or leave us a note! <i class="fa fa-laptop"></i></p>
-      <form action="https://www.w3schools.com/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+
+      <div class="w3-col m3">
+
+        <img src="./W3.CSS Template_files/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+
+      </div>
+
+
+      <div class="w3-col m3">
+
+        <img src="./W3.CSS Template_files/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+
+      </div>
+
+
+      <div class="w3-col m3">
+
+        <img src="./W3.CSS Template_files/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+
+      </div>
+
+    </div>
+
+
+    <div class="w3-row-padding w3-center w3-section">
+
+      <div class="w3-col m3">
+
+        <img src="./W3.CSS Template_files/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+
+      </div>
+
+
+      <div class="w3-col m3">
+
+        <img src="./W3.CSS Template_files/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+
+      </div>
+
+
+      <div class="w3-col m3">
+
+        <img src="./W3.CSS Template_files/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+
+      </div>
+
+
+      <div class="w3-col m3">
+
+        <img src="./W3.CSS Template_files/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+
+      </div>
+
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- Modal for full size images on click-->
+
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display=&#39;none&#39;">
+
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+      <i class="fa fa-remove">
+      </i>
+    </span>
+
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+
+      <img id="img01" class="w3-image">
+
+      <p id="caption" class="w3-opacity w3-large">
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Third Parallax Image with Portfolio Text -->
+
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+
+    <div class="w3-display-middle">
+
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT US
+     </span>
+
+   </div>
+
+ </div>
+
+
+ <!-- Container (Contact Section) -->
+
+ <div class="w3-content w3-container w3-padding-64" id="contact">
+
+  <h3 class="w3-center">CONTACT US
+  </h3>
+  
+  <p class="w3-center">
+    <em>If you have any questions, would like to join, or would like to plan an event, please reach out and
+      we would be more than happy to chat!
+    </em>
+  </p>
+
+  
+  <div class="w3-row w3-padding-32 w3-section">
+
+    <div class="w3-col m4 w3-container">
+
+
+      <!-- TODO benv; NOAH, can you get this to work? would be awesome. -->
+      
+      <!-- Add Google Maps -->
+      
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width: 100%; height: 400px; position: relative; overflow: hidden;">
+        <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+          <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+            <div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+              <div style="z-index: 1; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                    <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                      <div style="width: 256px; height: 256px; position: absolute; left: -106px; top: 105px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; position: absolute; left: 150px; top: 105px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; position: absolute; left: -106px; top: -151px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; position: absolute; left: -106px; top: 361px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; position: absolute; left: 150px; top: -151px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; position: absolute; left: 150px; top: 361px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;">
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;">
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                    <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                      <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -106px; top: 105px;">
+                        <canvas draggable="false" height="320" width="320" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;">
+                        </canvas>
+                      </div>
+                      <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 150px; top: 105px;">
+                        <canvas draggable="false" height="320" width="320" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;">
+                        </canvas>
+                      </div>
+                      <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -106px; top: -151px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -106px; top: 361px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 150px; top: -151px;">
+                      </div>
+                      <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 150px; top: 361px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="position: absolute; z-index: 0; left: 0px; top: 0px;">
+                  <div style="overflow: hidden; width: 284px; height: 400px;">
+                    <img src="./W3.CSS Template_files/StaticMapService.GetMapImage" style="width: 284px; height: 400px;">
+                  </div>
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                  <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                    <div style="position: absolute; left: -106px; top: 105px; transition: opacity 200ms ease-out;">
+                      <img draggable="false" alt="" src="./W3.CSS Template_files/vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                    </div>
+                    <div style="position: absolute; left: 150px; top: 105px; transition: opacity 200ms ease-out;">
+                      <img draggable="false" alt="" src="./W3.CSS Template_files/vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                    </div>
+                    <div style="position: absolute; left: -106px; top: -151px; transition: opacity 200ms ease-out;">
+                      <img draggable="false" alt="" src="./W3.CSS Template_files/vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                    </div>
+                    <div style="position: absolute; left: -106px; top: 361px; transition: opacity 200ms ease-out;">
+                      <img draggable="false" alt="" src="./W3.CSS Template_files/vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                    </div>
+                    <div style="position: absolute; left: 150px; top: -151px; transition: opacity 200ms ease-out;">
+                      <img draggable="false" alt="" src="./W3.CSS Template_files/vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                    </div>
+                    <div style="position: absolute; left: 150px; top: 361px; transition: opacity 200ms ease-out;">
+                      <img draggable="false" alt="" src="./W3.CSS Template_files/vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                <p class="gm-style-pbt">
+                </p>
+              </div>
+              <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;">
+                <div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;">
+                </div>
+              </div>
+              <div style="z-index: 4; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;">
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;">
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+              <a target="_blank" href="https://maps.google.com/maps?ll=41.878114,-87.620872&amp;z=12&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;">
+                <div style="width: 66px; height: 26px; cursor: pointer;">
+                  <img src="./W3.CSS Template_files/google4_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+                </div>
+              </a>
+            </div>
+            <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 18px; top: 110px;">
+              <div style="padding: 0px 0px 10px; font-size: 16px;">Map Data
+              </div>
+              <div style="font-size: 13px;">Map data ©2017 Google
+              </div>
+              <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000;">
+                <img src="./W3.CSS Template_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+              </div>
+              <img src="./W3.CSS Template_files/transparent.png" draggable="false" style="width: 37px; height: 37px; user-select: none; border: 0px; padding: 0px; margin: 0px; position: absolute; right: 0px; top: 0px; z-index: 10001; cursor: pointer;">
+            </div>
+            <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 71px; bottom: 0px; width: 121px;">
+              <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                  <div style="width: 1px;">
+                  </div>
+                  <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                  </div>
+                </div>
+                <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                  <a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data
+                  </a>
+                  <span style="">Map data ©2017 Google
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+              <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2017 Google
+              </div>
+            </div>
+            <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+              <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                <div style="width: 1px;">
+                </div>
+                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                </div>
+              </div>
+              <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use
+                </a>
+              </div>
+            </div>
+            <div style="cursor: pointer; width: 25px; height: 25px; overflow: hidden; margin: 10px 14px; position: absolute; top: 0px; right: 0px;">
+              <img src="./W3.CSS Template_files/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+            </div>
+            <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; user-select: none; position: absolute; bottom: 107px; right: 28px;">
+              <div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;">
+                <div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;">
+                  <div title="Zoom in" aria-label="Zoom in" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;">
+                    <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;">
+                      <img src="./W3.CSS Template_files/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
+                    </div>
+                  </div>
+                  <div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;">
+                  </div>
+                  <div title="Zoom out" aria-label="Zoom out" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;">
+                    <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;">
+                      <img src="./W3.CSS Template_files/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gm-svpc" controlwidth="28" controlheight="28" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default; position: absolute; left: 0px; top: 0px;">
+                <div style="position: absolute; left: 1px; top: 1px;">
+                </div>
+                <div style="position: absolute; left: 1px; top: 1px;">
+                  <div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
+                    <img src="./W3.CSS Template_files/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div aria-label="Pegman is on top of the Map" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;">
+                    <img src="./W3.CSS Template_files/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;">
+                    <img src="./W3.CSS Template_files/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;">
+              <div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;">
+                <div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; cursor: pointer; background-color: rgb(255, 255, 255); display: none;">
+                  <img src="./W3.CSS Template_files/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                </div>
+                <div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);">
+                  <img src="./W3.CSS Template_files/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                </div>
+              </div>
+            </div>
+            <div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;">
+              <div class="gm-style-mtc" style="float: left;">
+                <div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 11px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 22px; font-weight: 500;">Map
+                </div>
+                <div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; left: 0px; top: 35px; text-align: left; display: none;">
+                  <div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; direction: ltr; text-align: left; white-space: nowrap;">
+                    <span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
+                      <div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
+                        <img src="./W3.CSS Template_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;">
+                      </div>
+                    </span>
+                    <label style="vertical-align: middle; cursor: pointer;">Terrain
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="gm-style-mtc" style="float: left;">
+                <div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 11px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-left: 0px; min-width: 40px;">Satellite
+                </div>
+                <div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; right: 0px; top: 35px; text-align: left; display: none;">
+                  <div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; direction: ltr; text-align: left; white-space: nowrap;">
+                    <span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
+                      <div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;">
+                        <img src="./W3.CSS Template_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;">
+                      </div>
+                    </span>
+                    <label style="vertical-align: middle; cursor: pointer;">Labels
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+      </div>
+
     </div>
+    
+    <div class="w3-col m8 w3-panel">
+
+      <div class="w3-large w3-margin-bottom">
+
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right">
+        </i>
+        <span class="w3-hide-small">1 Barnard Dr, Oceanside, CA 92056
+        </span>
+        <span class="w3-hide-large">Oceanside, CA>
+        </span>
+        <br>
+        
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right">
+        </i>
+        <b>Phone:
+        </b> TBD
+        <br>
+        
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right">
+        </i>
+        <b>Email:
+        </b> mcccompsciclub@gmail.com
+        <br>
+
+      </div>
+
+      
+      <!-- TODO benv; NOAH - I need your help to get the contact button and fields to work properly -->
+      
+      <p>Swing by if you want to meet us, or leave us a note! 
+        <i class="fa fa-laptop">
+        </i>
+      </p>
+      
+      <form action="https://www.w3schools.com/action_page.php" target="_blank">
+
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+
+          <div class="w3-half">
+
+            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+
+          </div>
+          
+          <div class="w3-half">
+
+            <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+
+          </div>
+
+        </div>
+        
+        <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
+        
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+
+          <i class="fa fa-paper-plane">
+          </i> SEND MESSAGE
+
+        </button>
+
+      </form>
+
+    </div>
+
   </div>
+
 </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="https://mcc-compsci.github.io/#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/MCCCompSciClub/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/compsciclub_mcc/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <!-- TODO add these accounts once the club has them
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  -->
-  </div>
 
-  <!-- TODO benv; can we just remove this? Very Tacky. Dont want any legal trouble though -->
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+  <a href="https://mcc-compsci.github.io/#home" class="w3-button w3-light-grey">
+    <i class="fa fa-arrow-up w3-margin-right">
+    </i>To the top
+  </a>
+  
+  <div class="w3-xlarge w3-section">
+
+    <a href="https://www.facebook.com/MCCCompSciClub/">
+      <i class="fa fa-facebook-official w3-hover-opacity">
+      </i>
+    </a>
+    
+    <a href="https://www.instagram.com/compsciclub_mcc/">
+      <i class="fa fa-instagram w3-hover-opacity">
+      </i>
+    </a>
+    
+    <!-- TODO add these accounts once the club has them
+    
+    <i class="fa fa-snapchat w3-hover-opacity">
+    </i>
+    
+    <i class="fa fa-pinterest-p w3-hover-opacity">
+    </i>
+    
+    <i class="fa fa-twitter w3-hover-opacity">
+    </i>
+    
+    <i class="fa fa-linkedin w3-hover-opacity">
+    </i>
+  -->
+  
+</div>
+
+
+<!-- TODO benv; can we just remove this? Very Tacky. Dont want any legal trouble though -->
+
+<p>Powered by 
+  <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css
+  </a>
+</p>
+
 </footer>
 
-<!-- TODO benv; noah - have at it -->
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
+<!-- TODO benv; noah - have at it -->
+
+<!-- Add Google Maps -->
+
+<script>
+  function myMap()
+  {
+    myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
 
 // Modal Image Gallery
 function onClick(element) {
@@ -321,27 +916,32 @@ function onClick(element) {
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", " w3-opacity-min");
-    }
+  var navbar = document.getElementById("myNavbar");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+  } else {
+    navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", " w3-opacity-min");
+  }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
+
 </script>
 
-<!-- TODO make this API key invisible -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlFm4Is0VCECfINHQfNFPWPtV7E9ZBcko&callback=myMap"></script>
-<script src="./W3.CSS Template_files/js"></script>
 
-</body></html>
+<!-- TODO make this API key invisible -->
+
+<!-- <script src="./W3.CSS Template_files/js">
+</script>
+ -->
+
+</body>
+</html>
