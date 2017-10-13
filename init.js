@@ -1,5 +1,5 @@
 window.onload = () => {
-  myCenter = new google.maps.LatLng(33.1384321,-117.332266); //33.18836,-117.2970025
+  myCenter = new google.maps.LatLng(33.1913072,-117.3044178);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
