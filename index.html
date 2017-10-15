@@ -47,7 +47,6 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* TODO: ben.v. Insert our own images here from open-source */
 /*First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url('images/glasseswithcode.jpeg');
@@ -56,14 +55,14 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  /*background-image: url("/w3images/parallax2.jpg");*/
-  min-height: 400px;
+  background-image: url('images/brain.jpg');
+  min-height: 350px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  /*background-image: url("/w3images/parallax3.jpg");*/
-  min-height: 400px;
+  background-image: url('images/sdcliff.jpg');
+  min-height: 350px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -78,28 +77,14 @@ body, html {
 
 </style>
 
-<!-- <script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/common.js.download">
-</script>
-<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/map.js.download">
-</script>
-<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/util.js.download">
-</script>
-<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/marker.js.download">
-</script>
- -->
+
 <style type="text/css">.gm-style {
   font: 400 11px Roboto, Arial, sans-serif;
   text-decoration: none;
 }
 .gm-style img { max-width: none; }
 </style>
-<!-- <script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/onion.js.download">
-</script>
-<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/controls.js.download">
-</script>
-<script type="text/javascript" charset="UTF-8" src="./W3.CSS Template_files/stats.js.download">
-</script>
- -->
+
 </head>
 <body>
 
@@ -117,22 +102,20 @@ body, html {
 
       </a>
 
-      <!-- TODO: benv. ; NEED TO FIX THIS AND ADD OUR OWN IMAGES HERE FOR THE ICONS OF THE MENU BAR -->
-
-      <a href="https://mcc-compsci.github.io/#home" class="w3-bar-item w3-button">HOME
+      <a href="#home" class="w3-bar-item w3-button">HOME
       </a>
 
-      <a href="https://mcc-compsci.github.io/#about" class="w3-bar-item w3-button w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">
         <i class="fa fa-user">
-        </i> MEMBERSHIP
+        </i> MEMBERS
       </a>
 
-      <a href="https://mcc-compsci.github.io/#portfolio" class="w3-bar-item w3-button w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button w3-hide-small">
         <i class="fa fa-th">
-        </i> GITHUB/PROJECTS
+        </i> PROJECTS
       </a>
 
-      <a href="https://mcc-compsci.github.io/#contact" class="w3-bar-item w3-button w3-hide-small">
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">
         <i class="fa fa-envelope">
         </i> CONTACT US
       </a>
@@ -140,22 +123,21 @@ body, html {
       <a href="http://www.miracosta.edu/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
 
         <i class="fa fa-university">
-        </i> MCC OFFICIAL SITE
+        </i> MCC SITE
 
       </a>
 
     </div>
 
-
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
 
-      <a href="intex.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT
       </a>
 
-      <a href="https://mcc-compsci.github.io/#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO
+      <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO
       </a>
 
-      <a href="https://mcc-compsci.github.io/#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT
       </a>
 
       <a href="http://www.miracosta.edu/#" class="w3-bar-item w3-button">MCC SITE
@@ -165,7 +147,6 @@ body, html {
 
   </div>
 
-
   <!-- First Parallax Image with Logo Text -->
 
   <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -173,9 +154,9 @@ body, html {
     <div class="w3-display-middle" style="white-space:nowrap;">
 
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-        <span class ="w3-hide-small">MIRACOSTA 
+        <span class ="w3-hide-small">MIRACOSTA
         </span>
-        <span class="w3-hide-large">MCC 
+        <span class="w3-hide-large">MCC
         </span>CS CLUB
       </span>
 
@@ -183,23 +164,27 @@ body, html {
 
   </div>
 
-
   <!-- Container (About Section) -->
 
   <div class="w3-content w3-container w3-padding-64" id="about">
 
-    <h3 class="w3-center">MEMBERSHIP
+    <h3 class="w3-center"><b>MEMBERSHIP</b>
     </h3>
 
     <p class="w3-center">
-      <em>Passionate developers who love tech and want to pursue a career in software development.
+      <em>We are passionate developers who love tech and are pursuing a career in software development.
       </em>
     </p>
 
-    <p>Starting in Fall 2017, the CS Club was restarted and reinvigorated by a new generation of young computer scientists. We hope to plan
-     some awesome events, including hackathons, tech projects with Raspberry Pi's, this website, and a trip to Google! Please
-     contact us if you'd like to join in on the awesome activities and get to know us more. The membership table below links
-     to the github accounts of our talented young developers.
+    <p class ="w3-center">Beginning in Fall 2017, the MiraCosta CS Club was started by a new generation of budding computer scientists and software developers.
+    </p>
+    <p class=>
+     At CS Club, we plan to host hackathons,
+     <a class ="w3-hover-opacity" href="#projects">incubate tech projects</a>
+     , plan trips to software development companies, and much more to come! Please contact our club officers
+     <a class="w3-hover-opacity" href="#contact">using the forms below</a>
+     if you'd like to join in on the awesome activities, or would like any additional information. The membership table
+     below links to the <a href="https://github.com" class="w3-hover-opacity">github</a> accounts of our talented young developers.
    </p>
 
    <div class="w3-row">
@@ -207,79 +192,69 @@ body, html {
     <div class="w3-col m6 w3-center w3-padding-large">
 
       <p>
-        <b>
           <i class="fa fa-user w3-margin-right">
           </i>MiraCosta Club Members
-        </b>
       </p>
       <br>
-      
-      <!-- TODO: benv; INSERT AN IMAGE OF THE CLUB DOING AWESOME STUFF-->
-      
-      <img src="images/empty-classroom-placeholder.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of the club members" width="500" height="333">
 
+      <!-- TODO: benv; INSERT AN IMAGE OF THE CLUB MEMBERS-->
+      <img src="images/empty-classroom-placeholder.jpg" class="w3-round w3-image" alt="Photo of the club members" width="500" height="333">
     </div>
 
-    
-    <!-- TODO: benv; make this available on small devices and format better -->
-    
+    <!-- TODO: benv; discuss making this available on small devices and format better -->
+
     <!-- Hide this text on small devices -->
-    
+
     <div class="w3-col m6 w3-hide-small w3-padding-large">
 
       <p>
         <h3>
-          <b>Club Leadership
-          </b>
+          Club Leadership
         </h3>
-        
+
         <!-- TODO: benv: like to add better style to the list bullets! -->
-        
+
         <ul>
 
          <li>
-          <a href = "https://github.com/nerychapeton">Nery Chapeton-Lamas: Club Advisor
-          </a>
+          <a href = "https://github.com/nerychapeton">Nery Chapeton-Lamas</a>: Club Advisor
         </li>
 
         <li>
-          <a href = "">Jenny Lee: Club President
-          </a>
+          <a href = "">Jenny Le</a>: Club President
         </li>
 
         <li>
-          <a href="https://github.com/ChristopherWMM">Christopher Martin: Vice President
-          </a>
+          <a href="https://github.com/ChristopherWMM">Christopher Martin</a>: Vice President
         </li>
 
         <li>
-          <a href = "">Julian Beaulieu: ICC Representative
+          <a href = "">Julian Beaulieu</a>: ICC Representative
           </li>
 
           <li>
-            <a href = "https://github.com/ben-var">Benjamin Vargas: Club Officer and Administrator
-            </a>
+            <a href = "https://github.com/ben-var">Benjamin Vargas</a>: Club Officer and Administrator
           </li>
 
         </ul>
 
         <h3>
-          <b>Club Members
-          </b>
+          Club Members
         </h3>
 
         <ul>
 
           <li>
-            <a href = "https://github.com/NoahT">Noah Teshima: Javascript Jedi
-              <a>
+            <a href = "https://github.com/NoahT">Noah Teshima</a>: Javascript Jedi
               </li>
 
               <li>
-                <a href="https://github.com/t-a-y-l-o-r">Taylor Cochran: AKA Web Dev in Training
-                </a>
+                <a href="https://github.com/t-a-y-l-o-r">Taylor Cochran</a>: AKA Web Dev in Training
               </li>
-
+          
+              <li>
+                <a href="https://github.com/rajenr">Reesha Rajen</a>: Description Coming Soon
+             </li>
 
             </ul>
 
@@ -287,53 +262,51 @@ body, html {
 
         </div>
 
+  <!-- TODO benv; determine if we want to use these weird bars
 
-  <!-- TODO benv; determine if we want these weird bars
 
-  
   <p class="w3-large w3-center w3-padding-16">Im really good at:
   </p>
-  
+
   <p class="w3-wide">
   <i class="fa fa-camera">
   </i>Photography
   </p>
-  
+
   <div class="w3-light-grey">
-    
+
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%
     </div>
-  
+
   </div>
-  
+
   <p class="w3-wide">
   <i class="fa fa-laptop">
   </i>Web Design
   </p>
-  
+
   <div class="w3-light-grey">
-    
+
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%
     </div>
-  
+
   </div>
-  
+
   <p class="w3-wide">
   <i class="fa fa-photo">
   </i>Photoshop
   </p>
-  
+
   <div class="w3-light-grey">
-    
+
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%
     </div>
-  
-  </div>
 
-</div>
+  </div>
 
 -->
 
+</div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
 
@@ -345,7 +318,6 @@ body, html {
     Club Members
 
   </div>
-  
   <div class="w3-quarter w3-section">
 
     <span class="w3-xlarge">Meeting Time
@@ -354,16 +326,15 @@ body, html {
     3-5 PM, Fridays, OC4622
 
   </div>
-  
   <div class="w3-quarter w3-section">
 
     <span class="w3-xlarge">Discord Channel
     </span>
     <br>
-    Contact us for a link
+     Contact us for a link
 
   </div>
-  
+
   <div class="w3-quarter w3-section">
 
     <span class="w3-xlarge">Tutoring Hours
@@ -376,7 +347,7 @@ body, html {
 </div>
 
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with Projects Text -->
 
 <div class="bgimg-2 w3-display-container w3-opacity-min">
 
@@ -388,98 +359,89 @@ body, html {
   </div>
 
 </div>
-
-
-<!-- Container (Portfolio Section) -->
-
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-
-  <h3 class="w3-center">OUR PROJECTS
-  </h3>
-
-  <p class="w3-center">
-    <em>Here is a preview of our member's work to-date
-      <br> Click on the images to make them bigger
-    </em>
-  </p>
-  <br>
-
   
-  <!--TODO benv; figure out what we want to do here. can use images or change this to be a table. I like images better, with a link
-    in the preview. Can link inside the alt text -->
 
+<!-- Container (Projects Section) -->
+<div class="w3-content w3-container w3-padding-64" id="projects">
+  <h3 class="w3-center"><b>OUR PROJECTS</b></h3>
+  <p class="w3-center">Here's some of the latest projects club members have worked on in addition to their required coursework.
+    <br><br><em><i class="fa fa-laptop"></i><font size="3"> The respective Github repository for each project and a preview image is shown below.</font></em>
+    </p><br>
 
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-
-    <div class="w3-row-padding w3-center">
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-
-      </div>
-
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-
-      </div>
-
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-
-      </div>
-
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-
-      </div>
-
+<div style="padding:55px 28px">
+  
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+  <h4><b>IBM Watson</h4>
+  <p>This project had an emphasis on IBM Watson, <br>a supercomputer.<br> Github Repository found <em>here.</em></p><br>
     </div>
+    <p>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/brain.jpg" alt="Project Image" width="300" height="200">
+      </p>
+    </div>
+  </div>
 
-
-    <div class="w3-row-padding w3-center w3-section">
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-
-      </div>
-
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-
-      </div>
-
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-
-      </div>
-
-
-      <div class="w3-col m3">
-
-        <img src="./W3.CSS Template_files/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-
-      </div>
-
-      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE
-      </button>
-
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+  <h4><b>CS Club Website</h4>
+  <p>Follow the development of our website, <br>from start to finish.<br> Github Repository found <em>here.</em></p><br>
+    </div>
+    <p>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/website-code.jpg" alt="Project Image" width="300" height="200">
+      </p>
     </div>
 
   </div>
+  
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+  <h4><b>Unity</b></h4>
+  <p>Current game developments.<br>Check out our work, all built with Unity.<br> Github Repository <em>here.</em></p><br>
+    </div>
+    <p>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/controller.jpg" alt="Project Image" width="300" height="200">
+      </p>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+  <h4><b>Mobile App</b></h4>
+  <p class="w3-center">Follow our app development.<br>Compatible with iOS and Android.<br> Github Repository <em>here.</em></p><br>
+    </div>
+    <p>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/phone.jpg" alt="Project Image" width="300" height="200">
+      </p>
+    </div>
+  </div>
+  
+    <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+  <h4><b>Raspberry Pi</b></h4>
+  <p class="w3-center">Check out the projects we're currently working on.<br> Github Repository <em>here.</em></p><br>
+    </div>
+    <p>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/raspberry-pi.jpg" alt="Project Image" width="300" height="200">
+      </p>
+    </div>
+  </div>
+  
+       <div class="w3-center">
+           <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">SEE MORE</button>
+       </div>
+  
+    </div>
+  </div>
+</div>
+<!-- END PROJECTS SECTION -->
 
 
+  <!-- TODO: Evalutate if this is necessary -->
   <!-- Modal for full size images on click-->
 
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display=&#39;none&#39;">
@@ -507,7 +469,7 @@ body, html {
 
     <div class="w3-display-middle">
 
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT US
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT
      </span>
 
    </div>
@@ -518,6 +480,15 @@ body, html {
  <!-- Container (Contact Section) -->
 
  <div class="w3-content w3-container w3-padding-64" id="contact">
+
+  <h3 class="w3-center"><b>CONTACT US</b>
+  </h3>
+
+  <p class="w3-center">
+    If you have any questions, would like to join, or would like to plan an event, please reach out and
+      we would be more than happy to chat! Whether you are new to CS or an experienced programmer, we gladly
+      accept any member willing to learn and collaborate with others of all skill levels and backgrounds.
+  </p>
 
   <h3 class="w3-center">CONTACT US
   </h3>
@@ -533,11 +504,8 @@ body, html {
 
     <div class="w3-col m4 w3-container">
 
-
-      <!-- TODO benv; NOAH, can you get this to work? would be awesome. -->
-      
       <!-- Add Google Maps -->
-      
+
       <div id="googleMap" class="w3-round-large w3-greyscale" style="width: 100%; height: 400px; position: relative; overflow: hidden;">
         <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
           <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
@@ -766,7 +734,6 @@ body, html {
       </div>
 
     </div>
-    
     <div class="w3-col m8 w3-panel">
 
       <div class="w3-large w3-margin-bottom">
@@ -775,16 +742,18 @@ body, html {
         </i>
         <span class="w3-hide-small">1 Barnard Dr, Oceanside, CA 92056
         </span>
-        <span class="w3-hide-large">Oceanside, CA>
+        <span class="w3-hide-large">Oceanside, CA
         </span>
         <br>
-        
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right">
+
+      <!-- TODO bv: Do we want to add different info here?
+      <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right">
         </i>
         <b>Phone:
         </b> TBD
         <br>
-        
+      -->
+
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right">
         </i>
         <b>Email:
@@ -795,12 +764,15 @@ body, html {
 
       
       <!-- TODO benv; NOAH - I need your help to get the contact button and fields to work properly -->
-      
-      <p>Swing by if you want to meet us, or leave us a note! 
-        <i class="fa fa-laptop">
-        </i>
-      </p>
-      
+
+      <p><i><font size="2">
+        *Send us your email address to be added to the mailing list.
+        <br><br>
+        If you would like to add your name or project to the club site, please send us
+        a message and we will add you to the site once we verify your membership
+        status.
+      </font></i></p>
+
       <form action="https://www.w3schools.com/action_page.php" target="_blank">
 
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -810,7 +782,6 @@ body, html {
             <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
 
           </div>
-          
           <div class="w3-half">
 
             <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
@@ -818,9 +789,9 @@ body, html {
           </div>
 
         </div>
-        
+
         <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
-        
+
         <button class="w3-button w3-black w3-right w3-section" type="submit">
 
           <i class="fa fa-paper-plane">
@@ -839,54 +810,44 @@ body, html {
 
 <!-- Footer -->
 
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-black w3-padding-64">
 
-  <a href="https://mcc-compsci.github.io/#home" class="w3-button w3-light-grey">
+  <a href="#home" class="w3-button w3-light-grey">
     <i class="fa fa-arrow-up w3-margin-right">
     </i>To the top
   </a>
-  
+
   <div class="w3-xlarge w3-section">
 
-    <a href="https://www.facebook.com/MCCCompSciClub/">
-      <i class="fa fa-facebook-official w3-hover-opacity">
-      </i>
+    <a href="https://www.instagram.com/compsciclub_mcc/" style="text-decoration:none">
+      <i class="fa fa-instagram w3-hover-opacity"></i>
     </a>
-    
-    <a href="https://www.instagram.com/compsciclub_mcc/">
-      <i class="fa fa-instagram w3-hover-opacity">
-      </i>
+
+    <a href="https://www.facebook.com/MCCCompSciClub/" style="text-decoration:none">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
     </a>
-    
+
     <!-- TODO add these accounts once the club has them
-    
+
     <i class="fa fa-snapchat w3-hover-opacity">
     </i>
-    
+
     <i class="fa fa-pinterest-p w3-hover-opacity">
     </i>
-    
+
     <i class="fa fa-twitter w3-hover-opacity">
     </i>
-    
+
     <i class="fa fa-linkedin w3-hover-opacity">
     </i>
   -->
-  
+
 </div>
-
-
-<!-- TODO benv; can we just remove this? Very Tacky. Dont want any legal trouble though -->
-
-<p>Powered by 
-  <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css
-  </a>
-</p>
+<font size="2">
+<p>Site brought to you by student members of the MiraCosta Computer Science Club.</a></p>
+</font>
 
 </footer>
-
-
-<!-- TODO benv; noah - have at it -->
 
 <!-- Add Google Maps -->
 
@@ -938,8 +899,8 @@ function toggleFunction() {
 
 </script>
 
-
-<!-- TODO make this API key invisible -->
+<!-- TODO: bv: why is this script source tag commented out? -->
+<!-- noah: why do we need it? -->
 
 <!-- <script src="./W3.CSS Template_files/js">
 </script>
