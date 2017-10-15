@@ -2,7 +2,7 @@ window.onload = () => {
   myCenter = new google.maps.LatLng(33.1908066,-117.3029278); //don't touch this please. confirmed on google maps.
   var mapOptions= {
     center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
+    zoom:13, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
