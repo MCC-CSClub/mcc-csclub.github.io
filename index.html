@@ -154,10 +154,13 @@ body, html {
     <div class="w3-display-middle" style="white-space:nowrap;">
 
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-        <span class ="w3-hide-small">MIRACOSTA
+        <!-- <span class ="w3-hide-small">MIRACOSTA
         </span>
         <span class="w3-hide-large">MCC
-        </span>CS CLUB
+        </span>CS CLUB -->
+        <span class="w3-hide-medium w3-hide-small">MIRACOSTA CS CLUB</span>
+        <span class="w3-hide-large w3-hide-small">MCC CS CLUB</span>
+        <span class="w3-hide-large w3-hide-medium">MCC CS CLUB</span>
       </span>
 
     </div>
@@ -859,54 +862,6 @@ body, html {
 </footer>
 
 <!-- Add Google Maps -->
-
-<script>
-  function myMap()
-  {
-    myCenter=new google.maps.LatLng(41.878114, -87.629798);
-    var mapOptions= {
-      center:myCenter,
-      zoom:12, scrollwheel: false, draggable: false,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
-    };
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
-    marker.setMap(map);
-  }
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-  var navbar = document.getElementById("myNavbar");
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-  } else {
-    navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", " w3-opacity-min");
-  }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-</script>
 
 <!-- TODO: bv: why is this script source tag commented out? -->
 <!-- noah: why do we need it? -->
