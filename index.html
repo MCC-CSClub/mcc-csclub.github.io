@@ -17,7 +17,7 @@
 <style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
 </style>
 
-<script type="text/javascript" src="init.js"></script>
+<script type="text/javascript" src="./init.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW_bq0dqdR5pGuA5irKBJG9dAPjxnIzz4">
 </script>
 
@@ -353,97 +353,95 @@ body, html {
 <!-- Second Parallax Image with Projects Text -->
 
 <div class="bgimg-2 w3-display-container w3-opacity-min">
-
   <div class="w3-display-middle">
-
     <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS
     </span>
-
   </div>
-
 </div>
 
 
 <!-- Container (Projects Section) -->
-<div class="w3-content w3-container w3-padding-64" id="projects">
-  <h3 class="w3-center"><b>OUR PROJECTS</b></h3>
-  <p class="w3-center">Here's some of the latest projects club members have worked on in addition to their required coursework.
-    <br><br><a href ="https://github.com" style="text-decoration:none" class="w3-hover-text-black"><i class="fa fa-github w3-xxlarge w3-margin-right"></i>
+  <div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center"><b>OUR PROJECTS</b></h3>
+    <br><br>
+    <p class="w3-center">
+      Here's some of the latest projects club members have worked on in addition to their required coursework.
+      <a href ="https://github.com" style="text-decoration:none" class="w3-hover-text-black"><i class="fa fa-github w3-xxlarge w3-margin-right">
+      </i>
       <em><font size="3">
-      The respective Github repository for each project and a preview image is shown below.
-    </font></em></a>
-    </p><br>
-
-<div style="padding:55px 28px">
-
-<div class="w3-row-padding w3-center">
-    <div class="w3-col m6">
-  <h4><b>IBM Watson</h4>
-  <p>This project had an emphasis on IBM Watson, <br>a supercomputer.<br> Github Repository found <em>here.</em></p><br>
-    </div>
-    <p>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="images/brain.jpg" alt="Project Image" width="300" height="200">
-      </p>
-    </div>
+        The respective Github repository for each project and a preview image is shown below.
+      </font></em></a>
+    </p>
   </div>
+  <!-- <br> -->
 
-<div class="w3-row-padding w3-center">
-    <div class="w3-col m6">
-  <h4><b>CS Club Website</h4>
-  <p>Follow the development of our website, <br>from start to finish.<br> Github Repository found <em>here.</em></p><br>
-    </div>
-    <p>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="images/website-code.jpg" alt="Project Image" width="300" height="200">
-      </p>
-    </div>
-
-  </div>
-
+  <!-- <div style="padding:55px 28px"> -->
+<div id="projectsList">
   <div class="w3-row-padding w3-center">
     <div class="w3-col m6">
-  <h4><b>Unity</b></h4>
-  <p>Current game developments.<br>Check out our work, all built with Unity.<br> Github Repository <em>here.</em></p><br>
+      <h4><b>IBM Watson</b></h4>
+      <p>This project had an emphasis on IBM Watson, <br>a supercomputer.<br> Github Repository found <em>here.</em></p><br>
     </div>
-    <p>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="images/controller.jpg" alt="Project Image" width="300" height="200">
+      <p>
+        <img class="w3-image w3-round-large" src="images/brain.jpg" alt="Project Image" width="300" height="200">
       </p>
     </div>
   </div>
 
   <div class="w3-row-padding w3-center">
     <div class="w3-col m6">
-  <h4><b>Mobile App</b></h4>
-  <p class="w3-center">Follow our app development.<br>Compatible with iOS and Android.<br> Github Repository <em>here.</em></p><br>
+      <h4><b>CS Club Website</b></h4>
+      <p>Follow the development of our website, <br>from start to finish.<br> Github Repository found <em>here.</em></p><br>
     </div>
-    <p>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="images/phone.jpg" alt="Project Image" width="300" height="200">
+      <p>
+        <img class="w3-image w3-round-large" src="images/website-code.jpg" alt="Project Image" width="300" height="200">
       </p>
     </div>
   </div>
 
-    <div class="w3-row-padding w3-center">
+  <div class="w3-row-padding w3-center">
     <div class="w3-col m6">
-  <h4><b>Raspberry Pi</b></h4>
-  <p class="w3-center">Check out the projects we're currently working on.<br> Github Repository <em>here.</em></p><br>
+      <h4><b>Unity</b></h4>
+      <p>Current game developments.<br>Check out our work, all built with Unity.<br> Github Repository <em>here.</em></p><br>
     </div>
-    <p>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="images/raspberry-pi.jpg" alt="Project Image" width="300" height="200">
+      <p>
+        <img class="w3-image w3-round-large" src="images/controller.jpg" alt="Project Image" width="300" height="200">
       </p>
     </div>
   </div>
 
-       <div class="w3-center">
-           <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">SEE MORE</button>
-       </div>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+      <h4><b>Mobile App</b></h4>
+      <p class="w3-center">Follow our app development.<br>Compatible with iOS and Android.<br> Github Repository <em>here.</em></p><br>
+    </div>
+    <div class="w3-col m6">
+      <p>
+        <img class="w3-image w3-round-large" src="images/phone.jpg" alt="Project Image" width="300" height="200">
+      </p>
+    </div>
+  </div>
 
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+      <h4><b>Raspberry Pi</b></h4>
+      <p class="w3-center">Check out the projects we're currently working on.<br> Github Repository <em>here.</em></p><br>
+    </div>
+    <div class="w3-col m6">
+      <p>
+        <img class="w3-image w3-round-large" src="images/raspberry-pi.jpg" alt="Project Image" width="300" height="200">
+      </p>
     </div>
   </div>
 </div>
+
+<div class="w3-center">
+ <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">SEE MORE</button>
+</div>
+
 <!-- END PROJECTS SECTION -->
 
 
@@ -838,6 +836,7 @@ body, html {
     <a href="https://www.facebook.com/MCCCompSciClub/" style="text-decoration:none">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
     </a>
+  </div>
 
     <!-- TODO add these accounts once the club has them
 
@@ -851,25 +850,14 @@ body, html {
     </i>
 
     <i class="fa fa-linkedin w3-hover-opacity">
-    </i>
-  -->
+    </i>-->
 
-</div>
 <font size="2">
 <p>Site brought to you by student members of the MiraCosta Computer Science Club.</a></p>
 </font>
 
 </footer>
-
-<!-- Add Google Maps -->
-
-<!-- TODO: bv: why is this script source tag commented out? -->
-<!-- noah: why do we need it? -->
-<!-- if not needed, remove in next patch -->
-
-<!-- <script src="./W3.CSS Template_files/js">
-</script>
- -->
+<script type="text/javascript" src="./jsonParse.js"></script>
 
 </body>
 </html>
