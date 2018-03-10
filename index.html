@@ -775,33 +775,54 @@ body, html {
         status.
       </font></i></p>
 
-      <form action="https://www.w3schools.com/action_page.php" target="_blank">
+     <form method="GET" action="mailto:mcccompsciclub@gmail.com" enctype="text/plain">
+    <div>Subject</div>
+    <input type="text" name="subject" style="width: 517px; height: 30px; "/>
 
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+    <div>Name</div>
+    <input name="Name" style="width: 515px; "/>
 
-          <div class="w3-half">
+    <div>E-Mail</div>
+    <input name="E-Mail Address" style="width: 514px; "/>
 
-            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+    <div>Message</div>
+    <textarea name="Message" style="width: 671px; height: 63px; "></textarea>
 
-          </div>
-          <div class="w3-half">
+    <br/>
+    <input type="submit" value="Send" />
 
-            <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+    <input type="hidden" name="body" />
+</form>
 
-          </div>
+<script>
+   var form = document.getElementsByTagName('form')[0];
+   form.addEventListener('submit',contact,false);
+   function contact(e) {
+      // Prevent Default Form Submission
+      e.preventDefault();
 
-        </div>
+      var target = e.target || e.srcElement;
+      var i = 0;
+      var message = '';
 
-        <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
+      // Loop Through All Input Fields
+      for(i = 0; i < target.length; ++i) {
+         // Check to make sure it's a value. Don't need to include Buttons
+         if(target[i].type != 'text' && target[i].type != 'textarea') {
+                // Skip to next input since this one doesn't match our rules
+            continue;
+         }
 
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+         // Add Input Name and value followed by a line break
+         message += target[i].name + ': ' + target[i].value + "\r\n";
+      }
+      // Modify the hidden body input field that is required for the mailto: scheme
+      target.elements["body"].value = message;
 
-          <i class="fa fa-paper-plane">
-          </i> SEND MESSAGE
-
-        </button>
-
-      </form>
+      // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
+      this.submit();
+   }
+</script>
 
     </div>
 
