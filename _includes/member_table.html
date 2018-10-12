@@ -6,6 +6,13 @@
         <h3 style="margin:0">{{ member.name }}</h3>
         <p>{{member.short_bio}}</p>
         <span>
+          {% if member.role %}
+            {% capture role %}{{ member.role }}{% endcapture %}
+            {% assign title = site.data.roles[role].title %}
+            <p><img class="icon" src="/assets/logo.png">{{ title }}</p>
+          {% endif %}
+        </span>
+        <span>
           {% if member.website %}
             <img class="icon" src="/assets/link-variant.png"><a href="{{ member.website }}">{{ member.website }}</a>
           {% endif %}
