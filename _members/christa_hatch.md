@@ -1,7 +1,7 @@
 ---
 name: Christa Hatch
 short_bio: Computer science major with an interest in video games and cosplay. Currently the ICC representative for the Computer Science Club.
-image_url: https://scontent.fsan1-1.fna.fbcdn.net/v/t1.0-9/29541052_1657894044265604_1307692817870125435_n.jpg?_nc_cat=110&oh=de1ff27a09a93efc0eaf6834437fb090&oe=5C180F2E
+image_url: https://media.licdn.com/dms/image/C4E03AQGE9iWeGlpfSA/profile-displayphoto-shrink_200_200/0?e=1554336000&v=beta&t=FLamFv_t0owLwQjtcmtz5ZdJ4zmUWfY4P86p22SBWkg
 role: 3
 website: https://www.linkedin.com/in/christa-hatch-61231914a
 github: ChristaKH
